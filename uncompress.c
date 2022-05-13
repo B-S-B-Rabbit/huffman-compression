@@ -213,13 +213,6 @@ int uncompress(){
     printf("Input file name:\n");
     scanf("%s", fileNameComp);
     FILE * f;
-    f =  fopen(fileNameComp, "rb");
-    if (f == NULL)
-    {
-        printf("File can't be open!");
-        return 0;
-    }
-    fclose(f);
     unsigned int i1 = strlen(fileNameComp);
     while (fileNameComp[i1] != '.'){
         i1 -= 1;
@@ -235,6 +228,13 @@ int uncompress(){
     strncpy(decompressionName, originalName, strlen(originalName));
     strcpy(decompressionName + strlen(originalName), "(1)");
     strncpy(decompressionName + strlen(originalName) + 3, extension, strlen(extension));
+    f =  fopen(fileNameNew, "rb");
+    if (f == NULL)
+    {
+        printf("File can't be open!");
+        return 0;
+    }
+    fclose(f);
     loadStr(fileNameNew, decompressionName);
     printf("\nDone\nThe file was saved in %s", decompressionName);
 }
