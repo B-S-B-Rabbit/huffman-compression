@@ -237,4 +237,4 @@ int uncompress(){
     fclose(f);
     loadStr(fileNameNew, decompressionName);
     printf("\nDone\nThe file was saved in %s", decompressionName);
-}
+} 
