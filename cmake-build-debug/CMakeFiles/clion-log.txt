@@ -1,0 +1,4 @@
+"D:\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_C_COMPILER=C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/gcc.exe" -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - MinGW Makefiles" D:\huffman
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/huffman/cmake-build-debug

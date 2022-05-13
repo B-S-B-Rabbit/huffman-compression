@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/huffman/compress.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+compress.h
+D:/huffman/compress.h
+
+D:/huffman/compress.h
+
+D:/huffman/main.c
+stdio.h
+-
+compress.h
+D:/huffman/compress.h
+uncompress.h
+D:/huffman/uncompress.h
+
+D:/huffman/uncompress.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+uncompress.h
+D:/huffman/uncompress.h
+
+D:/huffman/uncompress.h
+compress.h
+D:/huffman/compress.h
+
